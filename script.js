@@ -53,7 +53,7 @@ function renderizarMensagens() {
         let msg = mensagem[i]
 
         mensagemRender.innerHTML += `
-        <div class="msg ${msg.type}">
+        <div class="msg ${msg.type}" data-test="message">
             <p class="time">(${msg.time})</p>
             <span><b class="negrito">${msg.from} </b> para <b class="negrito">${msg.to}: </b>${msg.text}</span>
         </div>
